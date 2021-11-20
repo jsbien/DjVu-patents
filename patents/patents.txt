@@ -1,0 +1,126 @@
+http://djvu.org/forum/phpbb/viewtopic.php?t=727
+
+
+PlanetDjVu
+
+Welcome to PlanetDjVu, a forum about DjVu technology
+
+Skip to content
+
+Advanced search
+
+    * Board index ‹ PlanetDjvu ‹ Main Forum
+    * Change font size
+    * Print view
+
+    * FAQ
+    * Register
+    * Login
+
+Patents
+Interact with other DjVu users from around the globe.
+Post a reply
+1 post • Page 1 of 1
+Patents
+
+Postby erd » Tue Dec 08, 2009 7:27 pm
+Patent number: 5900953
+Title: Method and apparatus for extracting a foreground image and a background image from a color document image
+Inventors: Bottou; Leon (Highlands, NJ), LeCun; Yann Andre (Lincroft, NJ)
+Assignee: AT&T Corp (Middletown, NJ)
+Filing date: Jun 17, 1997
+Issue date: May 4, 1999
+Google patents: http://www.google.com/patents/about?id=j2sWAAAAEBAJ
+USPTO: http://patft.uspto.gov/netacgi/nph-Pars ... %2F5900953
+
+Patent number: 6058214
+Title: Compression of partially masked still images
+Inventors: Bottou; Leon (Monmouth, NJ), Pigeon; Steven (Blainville, CA)
+Assignee: AT&T Corp. (New York, NY)
+Filing date: Jan 19, 1999
+Issue date: May 2, 2000
+Google patents: http://www.google.com/patents/about?id=5j8EAAAAEBAJ
+USPTO: http://patft.uspto.gov/netacgi/nph-Pars ... %2F6058214
+
+Patent number: 6188334
+Title: Z-coder: fast adaptive binary arithmetic coder
+Inventors: Bengio; Yoshua (Montreal, CA), Bottou; Leon (Highlands, NJ), Howard; Paul G. (Morganville, NJ)
+Assignee: AT&T Corp. (New York, NY)
+Filing date: May 5, 2000
+Issue date: Feb 13, 2001
+Google patents: http://www.google.com/patents/about?id=PuEGAAAAEBAJ
+USPTO: http://patft.uspto.gov/netacgi/nph-Pars ... %2F6188334
+
+Patent number: 6281817
+Title: Z-coder: a fast adaptive binary arithmetic coder
+Inventors: Bengio; Yoshua (Montreal, CA), Bottou; Leon (Highlands, NJ), Howard; Paul G. (Morganville, NJ)
+Assignee: AT&T Corp. (New York, NY)
+Filing date: Feb 28, 2001
+Issue date: Aug 28, 2001
+Google patents: http://www.google.com/patents/about?id=aD4IAAAAEBAJ
+USPTO: http://patft.uspto.gov/netacgi/nph-Pars ... %2F6281817
+
+Patent number: 6343154
+Title: Compression of partially-masked image data
+Inventors: Bottou; Leon (Monmouth, NJ), Pigeon; Steven (Blainville, CA)
+Assignee: AT&T Corp. (New York, NY)
+Filing date: Mar 24, 2000
+Issue date: Jan 29, 2002
+Google patents: http://www.google.com/patents/about?id=Ox0LAAAAEBAJ
+USPTO: http://patft.uspto.gov/netacgi/nph-Pars ... %2F6343154
+
+Patent number: 6476740
+Title: Z-coder: a fast adaptive binary arithmetic coder
+Inventors: Bengio; Yoshua (Montreal, CA), Bottou; Leon (Highlands, NJ), Howard; Paul G. (Morganville, NJ)
+Assignee: AT&T Corp. (New York, NY)
+Filing date: December 14, 2001
+Issue date: November 5, 2002
+Google patents: http://www.google.com/patents/about?id=A0ELAAAAEBAJ
+USPTO: http://patft.uspto.gov/netacgi/nph-Pars ... %2F6476740
+
+Patent number: 6587588
+Title: Progressive image decoder for wavelet encoded images in compressed files and method of operation
+Inventors: Bottou; Leon (Highlands, NJ), Howard; Paul Glor (Morganville, NJ)
+Assignee: AT&T Corp. (New York, NY)
+Filing date: Dec 16, 1999
+Issue date: Jul 1, 2003
+Google patents: http://www.google.com/patents/about?id=ANQOAAAAEBAJ
+USPTO: http://patft.uspto.gov/netacgi/nph-Pars ... %2F6587588
+
+Patent number: 6728411
+Title: Compression of partially-masked image data
+Inventors: Bottou; Leon (Monmouth, NJ), Pigeon; Steven (Blainville, CA)
+Assignee: AT&T Corp. (New York, NY)
+Filing date: Sep 7, 2001
+Issue date: Apr 27, 2004
+Google patents: http://www.google.com/patents/about?id=tEASAAAAEBAJ
+USPTO: http://patft.uspto.gov/netacgi/nph-Pars ... %2F6728411
+
+Patent number: 6901169
+Title: Method and system for classifying image elements
+Inventors: Bottou; Leon (Highlands, NJ), Haffner; Patrick Guy (Atlantic Highlands, NJ)
+Assignee: AT & T Corp. (New York, NY)
+Filing date: Jan 24, 2002
+Issue date: May 31, 2005
+Google patents: http://www.google.com/patents/about?id=2NcVAAAAEBAJ
+USPTO: http://patft.uspto.gov/netacgi/nph-Pars ... %2F6901169
+
+erd
+     
+    Posts: 30
+    Joined: Wed Sep 17, 2008 12:08 pm
+
+Top
+Post a reply
+1 post • Page 1 of 1
+
+Return to Main Forum
+Jump to:
+Who is online
+
+Users browsing this forum: No registered users and 2 guests
+
+    * Board index
+    * The team • Delete all board cookies • All times are UTC
+
+Powered by phpBB® Forum Software © phpBB Group

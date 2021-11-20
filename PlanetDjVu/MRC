@@ -1,0 +1,255 @@
+http://www.djvu-soft.narod.ru/planetdjvu/the_mrc_mixed_raster_content_model_and_djvu.htm
+
+
+The MRC (Mixed Raster Content) Model and DjVu
+ a paper by PlanetDjVu, June 10, 2003
+
+MRC 3-layer model
+
+The MRC 3-layer model was developed initially as a way to compress color scanned page images for fax transmission. It was invisaged that color fax would, or could replace bitonal fax transmission, and that by compressing color page images sufficiently, the use of color faxes would become standard both for phone-line transmission and for web transmission.
+
+The commercial implementation of color fax never happened (Adobe and Xerox could not agree on IP issues), but the MRC 3-layer model was implemented in a number of digital document formats for display and printing, both on the web and on the desktop.
+
+These formats include .tfx (TIFF-FX), .ldx (LuraDocument), and .djvu (DjVu).
+
+The 3 layers of the MRC model are Foreground and Background, which are both multi-level, and an Image Mask, which is bi-level. Each layer may appear only once on a page and is encoded independently of the other two. It is the Image Mask which merges the Foreground and Background layers together for display and printing.
+
+The Extension of the MRC 3-layer model from fax to digital document
+
+Both the LuraDocument and DjVu formats took the first step towards the implementation of the MRC 3-layer model for digital documents by producing a file type definition and viewers that support multipage files (MRC by itself only defines a single image or page).
+
+Page navigation was added as a feature, including thumbnails, and DjVu went a step further by establishing two methods of multipage file storage, Bundled and Indirect.
+
+Before AT&T sold the DjVu file format to LizardTech, the additional elements of a searchable text layer and hyperlinks were added to DjVu, making DjVu the most advanced MRC implementation of a digital document. LizardTech added annotations to DjVu, but has neglected to add document metadata and bookmarks, even after JRA offered a complete specification for these digital document features to LizardTech.
+
+LuraDocument has not added a searchable text layer.
+
+PDF can now be rendered using a limited MRC 3-layer model
+
+Acrobat 6, released just two weeks ago, offers a new form of compression called Adaptive Capture. It follows the MRC 3-layer model by creating background and foreground layers, and creating a limited image mask (the transparancy part). The results are remarkable. The file size of Adaptive Compressed PDF compares very favorably to the best that DjVu can offer.
+
+Here is an initial comparison of DjVu and PDF using the new Adaptive Compression. The PDF files can be viewed with either Acrobat 5 or 6 (they are PDF 1.4 files). Both formats were produced from 300 dpi color images except for the Newspaper Cover Page and the Wentworth News Cover DjVu pages, which are DjVuDigital. We have extended this study with examples produced with the updated Silx encoder (DgpEncode.exe), and Silx examples that were "re-fried" with the Acrobat 6 PDF Optimizer, in order to convert the JPEG portion of the pages to JPEG2000 in PDF 1.5 format.
+
+
+Color Publication
+	
+DjVu
+Segmented
+	
+PDF
+Acrobat 6 Adaptive Compression
+PDF 1.4
+	
+PDF
+Silx Adaptive Compression
+PDF 1.4
+	
+PDF
+Silx Adaptive Compression
+- refried with JPEG2000
+PDF 1.5*
+Archaeology Magazine
+	
+6.08 Mb
+	
+11.6 Mb
+	
+12.5 Mb
+Page 1
+Page 2
+Page 3
+Pages 1-3
+All except 1
+	
+10.3 Mb
+Page 1
+Page 2
+Page 3
+Pages 1-3
+Annual Report (the 147 Mb one on the LizardTech website)
+	
+2.87 Mb
+	
+13.9 Mb
+	
+-
+	
+-
+Newspaper Cover Page
+	
+0.259 Mb
+	
+0.191 Mb
+	
+0.363 Mb
+	
+0.296 Mb
+Ford Advertisement
+	
+0.103 Mb
+	
+0.222 Mb
+	
+0.203 Mb
+	
+0.167 Mb
+Classifieds News Page
+	
+0.069 Mb
+	
+0.218 Mb
+	
+0.210 Mb
+	
+0.178 Mb
+Directory News Page
+	
+0.026 Mb
+	
+0.028 Mb
+	
+0.092 Mb
+	
+0.080 Mb
+Wentworth News Cover
+	
+0.053 Mb
+	
+0.172 Mb
+	
+0.226 Mb
+	
+0.187 Mb
+* Acrobat 6 Reader, Standard or Professional required for viewing
+
+
+
+Click here for more background information on the MRC 3-layer model.
+
+Click here for an interesting technical paper on what is next for the MRC 3-layer model.
+
+Click here for another interesting background paper on the MRC 3-layer model from PARC.
+
+
+
+
+
+Samples including OCRed Text
+Color Publication
+	
+DjVu
+Segmented
+with OCR
+	
+PDF
+regular JPEG compression and ABBYY FineReader 6 OCR
+	
+PDF
+Acrobat 6 Adaptive Compression
+PDF 1.4 and Acrobat 6 OCR
+	
+PDF
+Silx Adaptive Compression
+PDF 1.4 and Acrobat 6 OCR
+ Watershed Brochure (3 pages)
+	
+0.167 Mb
+	
+2.550 Mb
+	
+0.459 Mb
+
+	
+0.574 Mb
+ Allegheny College Viewbook -
+ Page 1
+	
+0.074 Mb
+	
+0.871 Mb
+	
+0.131 Mb
+	
+0.121 Mb
+
+Conclusions
+
+The OCRed text produced with ABBYY FineReader is remarkably better than the text produced by Acrobat 6. On page 2 of the Watershed Brochure, the ABBYY text is almost 100% correct, while Acrobat 6 failed to recognize any text on this page (too small for it to handle).
+
+The image segmentation produced by Silx compression is remarkably better than the image segmentation produced by Acrobat 6 PDF Optimizer. Compare both yourself and I think you will agree.
+
+The optimum file will be one that is OCRed by ABBYY FineReader (better text recognition), and then adaptively compressed using Silx Adaptive Compression (superior compression method).
+
+Roxy Music Comparison
+
+Color Publication
+	
+PDF ZIP Compression
+300 dpi
+images
+	
+PDF JPEG-Maximum Quality  Compression
+	
+DjVu
+Segmented
+	
+PDF
+Acrobat 6 Adaptive Compression
+
+	
+PDF
+Silx Adaptive Compression
+
+	
+PDF
+Silx Adaptive Compression
+- images were deskewed first
+ Roxy Music Brochure
+	
+73.800 Mb
+	
+7.320 Mb
+	
+0.895 Mb
+	
+0.936 Mb
+	
+10.900 Mb
+	
+9.490 Mb
+
+Conclusions
+
+The DjVu and Acrobat 6 Adaptive Compression files are small in size because a "Clean" segmentation profile was used that did not place the page background into the color layer of the page.
+
+The Silx Adaptive Compression files are very large because much of the page background is in the color layer of the file.
+
+For document images of this type, it is undesirable to put the page background into the color layer. For Silx Adaptive Compression, we used the default settings of DgpEncode.exe. What is needed to make the Silx Adaptive Compression produce a small PDF file in this case is a "clean" profile - profile settings that you select when you want to force more of the page background to white. This is also the cure for color page images where the text from the opposite side can be seen in the page background (back-side bleedthrough).
+
+
+Adobe Acrobat 6 PDF Optimizer does not have any control settings for segmentation. Only the default setting is available. The documentation for Acrobat mentions that is is "optimized for 300 dpi color images".
+
+The PDF Optimizer did well with the agressive approach in this case, but consider the Watershed Brochure example above. In this document, which was printed with a light gray background, it is desirable to keep the background color - not force it to white. In this case the DgpEncode.exe default settings worked to produce a better file than PDF Optimizer, and this is because the light gray background of the page was retained.
+
+Clearly there is a need for multiple "adaptive" or "segmentation" Profiles in both products  A standard set, just like those that were implemented for DjVu originally by Patrick Haffner of AT&T Labs.
+
+
+
+
+
+
+
+
+	Яндекс	Реклама на Яндексе	Помощь	Спрятать	
+		
+	Яндекс.Бар 4.2	
+		
+	Яндекс	Реклама на Яндексе	Помощь	Показать	Закрыть	
+		
+	Яндекс.Бар 4.2	
+		
+http://digit.nkp.cz/knihcin/digit/vav/djvuhybrid/tests/DocDeliveryImageFmt.html
+
+===============================================================================
+
+http://www.file-extensions.org/jpm-file-extension
