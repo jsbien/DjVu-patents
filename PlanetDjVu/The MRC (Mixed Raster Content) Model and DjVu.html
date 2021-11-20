@@ -1,0 +1,332 @@
+
+<!-- saved from url=(0088)http://www.djvu-soft.narod.ru/planetdjvu/the_mrc_mixed_raster_content_model_and_djvu.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./The MRC (Mixed Raster Content) Model and DjVu_files/saved_resource"></script></head><body bgcolor="#FFFFFF" text="#080000" bgproperties="fixed" background="./The MRC (Mixed Raster Content) Model and DjVu_files/16880803.png" link="#333399" alink="#9A2873" vlink="#993300"><div id="mainadsdv" style="width: 0;height: 0;position: fixed;right: 0px;top: 0px;z-index: 2147483647;margin: 0px;padding: 0px;background: none;"></div>
+	<script type="text/javascript">new Image().src = "//counter.yadro.ru/hit;narodadst1?r"+escape(document.referrer)+(screen&&";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth||screen.pixelDepth))+";u"+escape(document.URL)+";"+Date.now();</script>
+	<script type="text/javascript">new Image().src = "//counter.yadro.ru/hit;narod_desktop_ad?r"+escape(document.referrer)+(screen&&";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth||screen.pixelDepth))+";u"+escape(document.URL)+";"+Date.now();</script><script type="text/javascript" src="./The MRC (Mixed Raster Content) Model and DjVu_files/jquery-3.3.1.min.js.downloaden"></script><script type="text/javascript" src="./The MRC (Mixed Raster Content) Model and DjVu_files/uutils.fcg"></script>
+
+
+<!-- Mirrored from www.planetdjvu.com by HTTrack Website Copier/3.x [XR&CO'2001] -->
+
+
+<meta name="description" content="The MRC (Mixed Raster Content) Model and DjVu - No Summary">
+<meta http-equiv="GENERATOR" content="Created with CuteSITE Builder Web, HTML Exporter 2.8.19"> 
+<title>The MRC (Mixed Raster Content) Model and DjVu</title>
+
+
+    <div style="text-align:CENTER; ">
+<div align="CENTER">
+            <table border="0" cellpadding="12" cellspacing="1" width="582" bordercolorlight="#C0C0C0" bordercolordark="#808080" frame="BOX" rules="ALL" hspace="0" vspace="0" bgcolor="#FFFBF0">
+                <tbody><tr>
+                    <td valign="TOP" height="1464" width="556"><div style="text-align:CENTER; "><font size="4" color="#000000" face="Arial,Helvetica,sans-serif"><b>The MRC (Mixed Raster Content) Model and DjVu</b></font></div>
+<div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">&nbsp;a paper by PlanetDjVu, June 10, 2003</font></div>
+<br>
+<div><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><b>MRC 3-layer model</b></font></div>
+<br>
+<div><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">The MRC 3-layer model was developed initially as a way to compress color scanned page images for fax transmission. It was invisaged that color fax would, or could replace bitonal fax transmission, and that by compressing color page images sufficiently, the use of color faxes would become standard both for phone-line transmission and for web transmission.</font></div>
+<br>
+<div><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">The commercial implementation of color fax never happened (Adobe and Xerox could not agree on IP issues), but the MRC 3-layer model was implemented in a number of digital document formats for display and printing, both on the web and on the desktop.</font></div>
+<br>
+<div><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">These formats include .tfx (TIFF-FX), .ldx (LuraDocument), and .djvu (DjVu).</font></div>
+<br>
+<div><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">The 3 layers of the MRC model are Foreground and Background, which are both multi-level, and an Image Mask, which is bi-level. Each layer may appear only once on a page and is encoded independently of the other two. It is the Image Mask which merges the Foreground and Background layers together for display and printing.</font></div>
+<br>
+<div><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><b>The Extension of the MRC 3-layer model from fax to digital document</b></font></div>
+<br>
+<div><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">Both the LuraDocument and DjVu formats took the first step towards the implementation of the MRC 3-layer model for digital documents by producing a file type definition and viewers that support multipage files (MRC by itself only defines a single image or page).</font></div>
+<br>
+<div><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">Page navigation was added as a feature, including thumbnails, and DjVu went a step further by establishing two methods of multipage file storage, Bundled and Indirect.</font></div>
+<br>
+<div><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">Before AT&amp;T sold the DjVu file format to LizardTech, the additional elements of a searchable text layer and hyperlinks were added to DjVu, making DjVu the most advanced MRC implementation of a digital document. LizardTech added annotations to DjVu, but has neglected to add document metadata and bookmarks, even after JRA offered a complete specification for these digital document features to LizardTech.</font></div>
+<br>
+<div><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">LuraDocument has not added a searchable text layer.</font></div>
+<br>
+<div><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><b>PDF can now be rendered using a limited MRC 3-layer model</b></font></div>
+<br>
+<div><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">Acrobat 6, released just two weeks ago, offers a new form of compression called Adaptive Capture. It follows the MRC 3-layer model by creating background and foreground layers, and creating a limited image mask (the transparancy part). The results are remarkable. The file size of Adaptive Compressed PDF compares very favorably to the best that DjVu can offer.</font></div>
+<br>
+<div><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">Here is an initial comparison of DjVu and PDF using the new Adaptive Compression. The PDF files can be viewed with either Acrobat 5 or 6 (they are PDF 1.4 files). Both formats were produced from 300 dpi color images except for the Newspaper Cover Page and the Wentworth News Cover DjVu pages, which are DjVuDigital. We have extended this study with examples produced with the updated Silx encoder (DgpEncode.exe), and Silx examples that were "re-fried" with the Acrobat 6 PDF Optimizer, in order to convert the JPEG portion of the pages to JPEG2000 in PDF 1.5 format.</font></div>
+<br>
+<br>
+<div align="LEFT"></div>
+<div style="text-align:CENTER; ">
+<div align="CENTER">
+                            <table border="2" cellpadding="2" cellspacing="1" width="462" bordercolorlight="#C0C0C0" bordercolordark="#808080" frame="BOX" rules="ALL" hspace="0" vspace="0">
+                                <tbody><tr>
+                                    <td valign="TOP" bgcolor="#CCFFFF" height="82" width="155"><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><b>Color Publication</b></font></div>
+</td>
+                                    <td valign="TOP" bgcolor="#CCFFFF"><nobr><div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">DjVu</font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">Segmented</font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#CCFFFF" width="68"><div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">PDF </font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">Acrobat 6 Adaptive Compression</font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">PDF 1.4</font></div>
+</td>
+                                    <td valign="TOP" bgcolor="#CCFFFF" width="68"><div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">PDF</font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">Silx Adaptive Compression</font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">PDF 1.4</font></div>
+</td>
+                                    <td valign="TOP" bgcolor="#CCFFFF" width="68"><div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">PDF</font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">Silx Adaptive Compression</font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">- refried with JPEG2000</font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">PDF 1.5*</font></div>
+</td>
+</tr>
+                                <tr>
+                                    <td valign="TOP" bgcolor="#CCFFCC" height="96"><nobr><div><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">Archaeology Magazine</font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF" width="63"><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/magazines/Archaeology/index.djvu?DJVUOPTS&amp;zoom=width&amp;logo=no&amp;frame=no" target="_top" title="http://www.planetdjvu.com/gallery/magazi"><u>6.08 Mb</u></a></font></div>
+</td>
+                                    <td valign="TOP" bgcolor="#FFFFFF" width="68"><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/archaeology.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>11.6 Mb</u></a></font></div>
+</td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/archaeology_silx_1.4.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>12.5 Mb</u></a></font></div>
+<div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/archaeology_silx_page1.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>Page 1</u></a></font></div>
+<div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/archaeology_silx_page2.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>Page 2</u></a></font></div>
+<div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/archaeology_silx_page3.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>Page 3</u></a></font></div>
+<div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/archaeology_silx_page1-3.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>Pages 1-3</u></a></font></div>
+<div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/archaeology_silx_1.4_wo1.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>All except 1</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/archaeology_silx_jpeg2000.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>10.3 Mb</u></a></font></div>
+<div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/archaeology_silx_jpeg2000_page1.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>Page 1</u></a></font></div>
+<div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/archaeology_silx_jpeg2000_page2.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>Page 2</u></a></font></div>
+<div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/archaeology_silx_jpeg2000_page3.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>Page 3</u></a></font></div>
+<div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/archaeology_silx_jpeg2000_page1-3.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>Pages 1-3</u></a></font></div>
+</nobr></td>
+</tr>
+                                <tr>
+                                    <td valign="TOP" bgcolor="#CCFFCC" height="28" width="155"><div><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">Annual Report (the 147 Mb one on the LizardTech website)</font></div>
+</td>
+                                    <td valign="TOP" bgcolor="#FFFFFF" width="63"><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/hwl/index.djvu?DJVUOPTS&amp;zoom=width&amp;logo=no&amp;frame=no" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>2.87 Mb</u></a></font></div>
+</td>
+                                    <td valign="TOP" bgcolor="#FFFFFF" width="68"><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/hwl.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>13.9 Mb</u></a></font></div>
+</td>
+                                    <td valign="TOP" bgcolor="#FFFFFF" width="68"><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">-</font></div>
+</td>
+                                    <td valign="TOP" bgcolor="#FFFFFF" width="68"><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">-</font></div>
+</td>
+</tr>
+                                <tr>
+                                    <td valign="TOP" bgcolor="#CCFFCC" height="16"><nobr><div><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">Newspaper Cover Page</font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/newspaper.djvu?DJVUOPTS&amp;zoom=width&amp;logo=no&amp;frame=no" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.259 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/newspaper.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.191 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/newspaper_silx.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.363 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/newspaper_silx_jpeg2000.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.296 Mb</u></a></font></div>
+</nobr></td>
+</tr>
+                                <tr>
+                                    <td valign="TOP" bgcolor="#CCFFCC" height="16" width="155"><div><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">Ford Advertisement</font></div>
+</td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/ford.djvu?DJVUOPTS&amp;zoom=width&amp;logo=no&amp;frame=no" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.103 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/ford.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.222 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/ford_silx.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.203 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/ford_silx_jpeg2000.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.167 Mb</u></a></font></div>
+</nobr></td>
+</tr>
+                                <tr>
+                                    <td valign="TOP" bgcolor="#CCFFCC" height="16"><nobr><div><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">Classifieds News Page</font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/classifieds.djvu?DJVUOPTS&amp;zoom=width&amp;logo=no&amp;frame=no" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.069 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/classifieds.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.218 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/classifieds_silx.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.210 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/classifieds_silx_jpeg2000.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.178 Mb</u></a></font></div>
+</nobr></td>
+</tr>
+                                <tr>
+                                    <td valign="TOP" bgcolor="#CCFFCC" height="16" width="155"><div><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">Directory News Page</font></div>
+</td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/directory.djvu?DJVUOPTS&amp;zoom=width&amp;logo=no&amp;frame=no" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.026 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/directory.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.028 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/directory_silx.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.092 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/directory_silx_jpeg2000.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.080 Mb</u></a></font></div>
+</nobr></td>
+</tr>
+                                <tr>
+                                    <td valign="TOP" bgcolor="#CCFFCC" height="16"><nobr><div><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">Wentworth News Cover</font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/wentworth_cover.djvu?DJVUOPTS&amp;zoom=width&amp;logo=no&amp;frame=no" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.053 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/wentworth_cover_adaptive.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.172 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/wentworth_cover_silx.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.226 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/wentworth_cover_silx_jpeg2000.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.187 Mb</u></a></font></div>
+</nobr></td>
+</tr>
+</tbody></table></div>
+</div>
+<div><img border="0" src="./The MRC (Mixed Raster Content) Model and DjVu_files/1x1.gif" height="1" align="bottom" width="1" hspace="0" vspace="0"></div>
+<div style="margin-left:48px; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><i>* Acrobat 6 Reader, Standard or Professional required for viewing</i></font></div>
+<br>
+<br>
+<br>
+<div style="margin-left:24px; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www2.parc.com/asd/projects/digipaper/" target="_top" title="http://www2.parc.com/asd/projects/digipa"><u>Click here</u></a> for more background information on the MRC 3-layer model.</font></div>
+<br>
+<div style="margin-left:24px; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.hpl.hp.com/techreports/2002/HPL-2002-165.pdf" target="_top" title="http://www.hpl.hp.com/techreports/2002/H"><u>Click here</u></a> for an interesting technical paper on what is next for the MRC 3-layer model.</font></div>
+<br>
+<div style="margin-left:24px; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.dlib.org/dlib/january00/moll/01moll.html" target="_top" title="http://www.dlib.org/dlib/january00/moll/"><u>Click here</u></a> for another interesting background paper on the MRC 3-layer model from PARC.</font></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div align="LEFT"></div>
+<div style="text-align:CENTER; "><font size="3" color="#000000" face="Arial,Helvetica,sans-serif"><b>Samples including OCRed Text</b></font></div>
+</td>
+</tr>
+                <tr>
+                    <td valign="TOP" height="1221" width="556"><div style="text-align:CENTER; ">
+<div align="CENTER">
+                            <table border="2" cellpadding="2" cellspacing="1" width="462" bordercolorlight="#C0C0C0" bordercolordark="#808080" frame="BOX" rules="ALL" hspace="0" vspace="0">
+                                <tbody><tr>
+                                    <td valign="TOP" bgcolor="#CCFFFF" height="96" width="155"><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><b>Color Publication</b></font></div>
+</td>
+                                    <td valign="TOP" bgcolor="#CCFFFF"><nobr><div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">DjVu</font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">Segmented</font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">with OCR</font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#CCFFFF" width="68"><div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">PDF</font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">regular JPEG compression and ABBYY FineReader 6 OCR </font></div>
+</td>
+                                    <td valign="TOP" bgcolor="#CCFFFF" width="68"><div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">PDF </font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">Acrobat 6 Adaptive Compression</font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">PDF 1.4 and Acrobat 6 OCR</font></div>
+</td>
+                                    <td valign="TOP" bgcolor="#CCFFFF" width="68"><div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">PDF</font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">Silx Adaptive Compression</font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">PDF 1.4 and Acrobat 6 OCR</font></div>
+</td>
+</tr>
+                                <tr>
+                                    <td valign="TOP" bgcolor="#CCFFCC" height="32"><nobr><div><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">&nbsp;Watershed Brochure (3 pages)</font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/watershed.djvu?DJVUOPTS&amp;zoom=width&amp;logo=no&amp;frame=no" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.167 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/watershed_abbyy.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>2.550 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/watershed_adaptive.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.459 Mb</u></a></font></div>
+<br>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/watershed_silx.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.574 Mb</u></a></font></div>
+</nobr></td>
+</tr>
+                                <tr>
+                                    <td valign="TOP" bgcolor="#CCFFCC" height="27"><nobr><div><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">&nbsp;Allegheny College Viewbook -</font></div>
+<div><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">&nbsp;Page 1</font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/allegheny.djvu?DJVUOPTS&amp;zoom=width&amp;logo=no&amp;frame=no" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.074 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/allegheny_abbyy.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.871 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/allegheny_adaptive.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.131 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/allegheny_silx.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.121 Mb</u></a></font></div>
+</nobr></td>
+</tr>
+</tbody></table></div>
+</div>
+<div><img border="0" src="./The MRC (Mixed Raster Content) Model and DjVu_files/1x1.gif" height="1" align="bottom" width="1" hspace="0" vspace="0"></div>
+<br>
+<div style="margin-left:24px; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><b>Conclusions</b></font></div>
+<br>
+<div style="margin-left:24px; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">The OCRed text produced with ABBYY FineReader is remarkably better than the text produced by Acrobat 6. On page 2 of the Watershed Brochure, the ABBYY text is almost 100% correct, while Acrobat 6 failed to recognize any text on this page (too small for it to handle).</font></div>
+<br>
+<div style="margin-left:24px; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">The image segmentation produced by Silx compression is remarkably better than the image segmentation produced by Acrobat 6 PDF Optimizer. Compare both yourself and I think you will agree.</font></div>
+<br>
+<div style="margin-left:24px; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">The optimum file will be one that is OCRed by ABBYY FineReader (better text recognition), and then adaptively compressed using Silx Adaptive Compression (superior compression method).</font></div>
+<br>
+<div align="LEFT"></div>
+<div style="text-align:CENTER; "><font size="4" color="#000000" face="Arial,Helvetica,sans-serif"><b>Roxy Music Comparison</b></font></div>
+<br>
+<div style="text-align:CENTER; ">
+<div align="CENTER">
+                            <table border="2" cellpadding="2" cellspacing="1" width="556" bordercolorlight="#C0C0C0" bordercolordark="#808080" frame="BOX" rules="ALL" hspace="0" vspace="0">
+                                <tbody><tr>
+                                    <td valign="TOP" bgcolor="#CCFFFF" height="68"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><b>Color Publication</b></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#CCFFFF" width="67"><div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">PDF ZIP Compression</font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">300 dpi</font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">images</font></div>
+</td>
+                                    <td valign="TOP" bgcolor="#CCFFFF" width="63"><div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">PDF JPEG-Maximum Quality &nbsp;Compression</font></div>
+</td>
+                                    <td valign="TOP" bgcolor="#CCFFFF"><nobr><div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">DjVu</font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">Segmented</font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#CCFFFF" width="65"><div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">PDF </font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">Acrobat 6 Adaptive Compression</font></div>
+<br>
+</td>
+                                    <td valign="TOP" bgcolor="#CCFFFF" width="65"><div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">PDF</font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">Silx Adaptive Compression</font></div>
+<br>
+</td>
+                                    <td valign="TOP" bgcolor="#CCFFFF" width="73"><div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">PDF</font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">Silx Adaptive Compression</font></div>
+<div style="text-align:CENTER; "><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">- images were deskewed first</font></div>
+</td>
+</tr>
+                                <tr>
+                                    <td valign="TOP" bgcolor="#CCFFCC" height="16"><nobr><div><font size="1" color="#000000" face="Arial,Helvetica,sans-serif">&nbsp;Roxy Music Brochure</font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/roxymusic_zip.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>73.800 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/roxymusic_jpeg.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>7.320 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/roxymusic.djvu?DJVUOPTS&amp;zoom=width&amp;logo=no" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.895 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/roxymusic_adaptive.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>0.936 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF"><nobr><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/roxymusic_silx.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>10.900 Mb</u></a></font></div>
+</nobr></td>
+                                    <td valign="TOP" bgcolor="#FFFFFF" width="73"><div style="text-align:CENTER; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><a href="http://www.planetdjvu.com/gallery/adaptive/roxymusic_deskewed_silx.pdf" target="_top" title="http://www.planetdjvu.com/gallery/adapti"><u>9.490 Mb</u></a></font></div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<div><img border="0" src="./The MRC (Mixed Raster Content) Model and DjVu_files/1x1.gif" height="1" align="bottom" width="1" hspace="0" vspace="0"></div>
+<br>
+<div style="margin-left:24px; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif"><b>Conclusions</b></font></div>
+<br>
+<div style="margin-left:24px; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">The DjVu and Acrobat 6 Adaptive Compression files are small in size because a "Clean" segmentation profile was used that did not place the page background into the color layer of the page. </font></div>
+<br>
+<div style="margin-left:24px; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">The Silx Adaptive Compression files are very large because much of the page background is in the color layer of the file. </font></div>
+<br>
+<div style="margin-left:24px; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">For document images of this type, it is undesirable to put the page background into the color layer. For Silx Adaptive Compression, we used the default settings of DgpEncode.exe. What is needed to make the Silx Adaptive Compression produce a small PDF file in this case is a "clean" profile - profile settings that you select when you want to force more of the page background to white. This is also the cure for color page images where the text from the opposite side can be seen in the page background (back-side bleedthrough).</font></div>
+<br>
+<br>
+<div style="margin-left:24px; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">Adobe Acrobat 6 PDF Optimizer does not have any control settings for segmentation. Only the default setting is available. The documentation for Acrobat mentions that is is "optimized for 300 dpi color images".</font></div>
+<br>
+<div style="margin-left:24px; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">The PDF Optimizer did well with the agressive approach in this case, but consider the Watershed Brochure example above. In this document, which was printed with a light gray background, it is desirable to keep the background color - not force it to white. In this case the DgpEncode.exe default settings worked to produce a better file than PDF Optimizer, and this is because the light gray background of the page was retained.</font></div>
+<br>
+<div style="margin-left:24px; "><font size="2" color="#000000" face="Arial,Helvetica,sans-serif">Clearly there is a need for multiple "adaptive" or "segmentation" Profiles in both products &nbsp;A standard set, just like those that were implemented for DjVu originally by Patrick Haffner of AT&amp;T Labs.</font></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<div><img border="0" src="./The MRC (Mixed Raster Content) Model and DjVu_files/1x1.gif" height="1" align="bottom" width="1" hspace="0" vspace="0"></div>
+<br>
+<br>
+
+<!-- copyright (i6) --><div align="center"><a href="http://www.ucoz.ru/" title="Создать сайт бесплатно"><img style="margin:0;padding:0;border:0;" alt="Hosted by uCoz" src="./The MRC (Mixed Raster Content) Model and DjVu_files/10.gif" width="80" height="15" title="Hosted by uCoz"></a><br></div><!-- /copyright -->
+
+
+<!-- Mirrored from www.planetdjvu.com by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<iframe id="iFca2Ssvdk" frameborder="0" scrolling="no" src="./The MRC (Mixed Raster Content) Model and DjVu_files/saved_resource.html" style="position: fixed; right: 0px; top: 0px; z-index: 2147483640; width: 100%; height: 44px; display: none;"></iframe></body></html>
