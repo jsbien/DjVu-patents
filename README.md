@@ -1,2 +1,2 @@
 # DjVu-patents
-Some notes about DjVu patents
+Some quick and dirty notes about DjVu patents
