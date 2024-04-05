@@ -1,5 +1,5 @@
 # DjVu-patents
-Some quick and dirty notes about DjVu patents. It seems to me that all them expired by now, but I am not for sure.
+Some quick and dirty notes about DjVu patents. It seems to me that all them expired by now, but I am not sure.
 
 Cf. also https://github.com/jwilk/didjvu/issues/21.
 
